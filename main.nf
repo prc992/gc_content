@@ -3,6 +3,8 @@ nextflow.enable.dsl=2
 
 process split_tss_samples{
 
+  tag "Sample - $sampleId" 
+
   //Docker Image
   container = 'prc992/gc_calc_par:v1.1'
   label 'default_mem'
