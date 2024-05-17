@@ -4,7 +4,7 @@ nextflow.enable.dsl=2
 process split_tss_samples{
 
   //Docker Image
-  container = 'prc992/gc_calc_par:v1.0'
+  container = 'prc992/gc_calc_par:v1.1'
   label 'default_mem'
 
   publishDir "$params.output/$sampleId", mode : 'copy', pattern : '*.csv'
